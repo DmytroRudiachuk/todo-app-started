@@ -1,6 +1,17 @@
-function changeText(selector, text) {
-	var element = document.querySelector(selector);
-	element.innertext = text;
-};
+var inputText = document.querySelector("#todoText");
+var todos = [];
 
-changeText("p", "Я все змінив")
+inputText.onkeypress = function(e) {
+	if(e.keyCode == 13) {
+		todos.push({
+			text: inputText.value,
+			isDone: false
+		});
+
+		inputText.value = "";
+	}
+}
+
+function renderTodos() {
+	
+}

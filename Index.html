@@ -5,10 +5,24 @@
 	<link rel="stylesheet" type="text/css" href="style/index.css">
 </head>
 <body>
-<p>Деякий текст</p>
-<p>Ще текст</p>
-<p>Третій текст</p>
-<p>Останній текст</p>
+	<button id="markAllCompleted">X</button> <input type="text" id="todoText"/>
+	<ul id="todoList">
+
+		<li><input type="checkbox"> Todo text</li>
+	</ul>
+	<div>
+		<span>Todos left: <span id="todosLeft"></span></span>
+
+		<button id="showAll">All</button>
+		<button id="showActive">Active</button>
+		<button id="showCompleted">Completed</button>
+
+		<button id="clearCompleted">Clear completed</button>
+	</div>
+	<div style="display: none;">
+		
+	</div>
+
 
 <script type="text/javascript" src="javascripts/index.js"></script>
 </body>
