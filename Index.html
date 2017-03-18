@@ -5,21 +5,23 @@
 	<link rel="stylesheet" type="text/css" href="style/index.css">
 </head>
 <body>
-	<button id="markAllCompleted">X</button> <input type="text" id="todoText"/>
-	<ul id="todoList"></ul>
-	
-	<div>
-		<span>Todos left: <span id="todosLeft"></span></span>
+	 <button id="markAllCompleted">O</button> <input type="text" id="todoText"/>
 
-		<button id="showAll">All</button>
-		<button id="showActive">Active</button>
-		<button id="showCompleted">Completed</button>
+    <ul id="todoList"></ul>
 
-		<button id="clearCompleted">Clear completed</button>
-	</div>
-	<div style="display: none;">
-		<li><input type="checkbox"> <span>Todo text</span></li>
-	</div>
+    <div>
+        <span>Todos left: <span id="todosLeft"></span></span>
+
+        <button id="showAll">All</button>
+        <button id="showActive">Active</button>
+        <button id="showCompleted">Completed</button>
+
+        <button id="clearCompleted">Clear completed</button>
+    </div>
+
+    <div style="display: none;">
+        <li><input type="checkbox"> <span>Todo text</span> <button>X</button></li>
+    </div>
 
 
 <script type="text/javascript" src="javascripts/index.js"></script>
